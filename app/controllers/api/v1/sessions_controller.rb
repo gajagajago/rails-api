@@ -5,7 +5,7 @@ class Api::V1::SessionsController < Devise::SessionsController
 
   def create
     if @user.valid_password?(sign_in_params[:password])
-      sign_in "user", @user
+      sign_in @user
       json_response("signed in successfully", true, { user: @user }, :ok)
     else
       json_response("wrong password", false, {}, :unauthorized)
