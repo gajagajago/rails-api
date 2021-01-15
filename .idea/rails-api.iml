@@ -49,6 +49,7 @@
     <orderEntry type="library" scope="PROVIDED" name="crass (v1.0.6, rbenv: 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="devise (v4.7.3, rbenv: 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="erubi (v1.10.0, rbenv: 2.7.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="faker (v2.15.1, rbenv: 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="faraday (v0.17.3, rbenv: 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ffi (v1.14.2, rbenv: 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="globalid (v0.4.2, rbenv: 2.7.1) [gem]" level="application" />
@@ -74,7 +75,7 @@
     <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.11.1, rbenv: 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="oauth2 (v0.6.1, rbenv: 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="omniauth (v1.9.1, rbenv: 2.7.1) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="omniauth-facebook (v8.0.0, rbenv: 2.7.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="omniauth-facebook (v1.0.0, rbenv: 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="omniauth-oauth2 (v1.0.2, rbenv: 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="orm_adapter (v0.5.0, rbenv: 2.7.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="public_suffix (v4.0.6, rbenv: 2.7.1) [gem]" level="application" />

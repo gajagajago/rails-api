@@ -13,6 +13,9 @@ Rails.application.routes.draw do
       # devise_for :users, controllers: { omniauth_callbacks: 'auth/callbacks' }
 
       post "facebook", to: "users#facebook"
+
+      resources :books, only: [:index, :show]
+      resources :ratings, only: [:create]
     end
   end
 end

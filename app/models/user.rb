@@ -5,6 +5,8 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable, :confirmable, :omniauthable, :omniauth_providers => [:facebook]
 
+  has_many :ratings
+
   def generate_new_token
     token = User.generate_unique_secure_token
     update_attributes(authentication_token: token)

@@ -10,7 +10,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_15_050436) do
+ActiveRecord::Schema.define(version: 2021_01_15_073146) do
+
+  create_table "books", force: :cascade do |t|
+    t.string "title"
+    t.string "author"
+    t.string "image"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "ratings", force: :cascade do |t|
+    t.string "title"
+    t.float "rating"
+    t.integer "book_id"
+    t.integer "user_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["book_id"], name: "index_ratings_on_book_id"
+    t.index ["user_id"], name: "index_ratings_on_user_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -34,4 +53,6 @@ ActiveRecord::Schema.define(version: 2021_01_15_050436) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "ratings", "books"
+  add_foreign_key "ratings", "users"
 end
