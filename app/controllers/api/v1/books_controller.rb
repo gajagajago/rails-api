@@ -1,6 +1,6 @@
 class Api::V1::BooksController < ApplicationController
   def index
-    @book = Book.all
+    @book = Book.all.includes([:ratings]) # reduce N+1 queries
 
     render json: @book
   end

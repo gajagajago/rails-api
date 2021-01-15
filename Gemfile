@@ -31,6 +31,7 @@ gem 'koala'
 gem 'omniauth-facebook', '~> 1.0.0.pr2'
 gem 'faker'
 gem 'active_model_serializers'
+gem 'bullet'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
