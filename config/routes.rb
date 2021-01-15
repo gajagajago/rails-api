@@ -9,6 +9,10 @@ Rails.application.routes.draw do
         delete "sign_out", to: "sessions#destroy"
         post "sign_up", to: "registrations#create"
       end
+
+      # devise_for :users, controllers: { omniauth_callbacks: 'auth/callbacks' }
+
+      post "facebook", to: "users#facebook"
     end
   end
 end
