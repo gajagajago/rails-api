@@ -1,6 +1,7 @@
 class Api::V1::RatingsController < ApplicationController
   def create
     @rating = Rating.new(rating_params)
+    @rating.user = current_user
 
     if @rating.save
       json_response("rating successful", true, { rating: @rating }, :ok)
@@ -11,6 +12,6 @@ class Api::V1::RatingsController < ApplicationController
 
   private
   def rating_params
-    params.require(:rating).permit(:title, :rating, :user_id, :book_id)
+    params.require(:rating).permit(:title, :rating, :book_id)
   end
 end
