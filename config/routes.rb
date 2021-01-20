@@ -17,6 +17,10 @@ Rails.application.routes.draw do
       resources :books, only: [:index, :show] do
         resources :ratings, only: [:create]
       end
+
+      resources :questions, only: [:index, :show] do
+        # resources :answers, only: [:index]
+      end
     end
   end
 end
