@@ -12,6 +12,7 @@ class Api::V1::TransactionsController < ApplicationController
   end
 
   def create
+    puts params
     @transaction = Transaction.new(transaction_params)
 
     if @transaction.save
@@ -31,6 +32,6 @@ class Api::V1::TransactionsController < ApplicationController
 
   private
   def transaction_params
-    params.require(:transaction).permit(:title, :amount, :date)
+    params.permit(:title, :amount, :date)
   end
 end
